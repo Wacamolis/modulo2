@@ -1,0 +1,38 @@
+body {
+  background-color: #1b1a1a; /* fondo oscuro */
+  color: #f0f0f0; /* texto claro */
+}
+
+h1 {
+  color: #e0e0e0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 120px;
+  font-weight: 800;
+  line-height: 140px;
+  letter-spacing: 1px;
+}
+
+.nombre {
+    color: #8574d0;
+    font-size: 180px;
+    font-weight: 900;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #a7a7a7;
+}
+
+.celeste {
+    color: #9ddaf4;
+}
+
+.verde {
+    color: #86ffc2;
+}
+
+.rosa {
+    color: #ffb9c8;
+}

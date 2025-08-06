@@ -1,0 +1,33 @@
+h1 {
+  color: #232324;
+  font-family: "Montserrat", sans-serif;
+  font-size: 120px;
+  font-weight: 800;
+  line-height: 140px;
+  letter-spacing: 1px;
+}
+
+.nombre {
+    color: #8574d0;
+    font-size: 180px;
+    font-weight: 900;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #4e4e4e;
+}
+
+.celeste {
+    color: #6abfe4;
+}
+
+.verde {
+    color: #6effb7;
+}
+
+.rosa {
+    color: #ff98af;
+}
