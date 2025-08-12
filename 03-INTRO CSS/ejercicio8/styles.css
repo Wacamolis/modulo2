@@ -1,0 +1,20 @@
+body{
+    font-family: "Lato", sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    padding: 0%;
+    width: 200px;
+    margin: 0 auto; /* con esto lo logre centrar */
+}
+.color{
+    padding: 15px;
+    color: rgb(24, 23, 23);
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}

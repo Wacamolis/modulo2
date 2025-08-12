@@ -1,0 +1,23 @@
+
+
+h1 {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: coral;
+    font-size: 72px;
+    text-align: left;
+}
+.parrafo{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: rgb(48, 48, 48);
+}
+
+.autor{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    color: gray;
+}
