@@ -1,0 +1,68 @@
+<!--10 - Tareas
+index.html debe tener:
+
+un título h1 que diga: Mis tareas.
+un título h2 que diga: Tareas para hoy.
+agregar 6 tareas, que deben tener:
+    un título h3 con la tarea a realizar (por ejemplo Hacer las compras).
+    un elemento en línea span con el estado de la tarea: Pendiente, Haciendo, Hecha, Cancelada.
+
+Poner un tipografía distinta a la default.
+Dar a los títulos un tamaño de fuente distinto al default.
+Dar a la fecha un tamaño de letra más pequeña y un color gris claro.
+Poner a cada estado un color de fondo distinto, siguiendo el siguiente criterio:
+
+Pendiente: Azul     Haciendo: Naranja       Hecha: Verde        Cancelada: Rojo-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--estilos-->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>Mis tareas</h1>
+    <h2>- Tareas para hoy </h2>
+    
+    <article>
+        <h3>Lavar platos</h3>
+        <span class="pendiente">‼️ pendiente</span>
+    </article>
+
+    <article>
+        <h3>Doblar ropa</h3>
+        <span class="haciendo">⭕️ Haciendo</span>
+    </article>
+
+    <article>
+        <h3>Hacer super</h3>
+        <span class="hecha">✅ Hecha</span>
+    </article>
+
+    <article>
+        <h3>Pagar servicios</h3>
+        <span class="cancelada">❌ Cancelada </span>
+    </article>
+
+    <article>
+        <h3>Recibir clases</h3>
+        <span class="pendiente">‼️ pendiente</span>
+    </article>
+
+    <article>
+        <h3>Hechar gasolina</h3>
+        <span class="hecha">✅ Hecha</span>
+    </article>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* Centro la card en pantalla con fondo suave */
+body{
+  font-family: "Quicksand", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6f7fb;
+}
+
+/* Tarjeta */
+.card{
+  position: relative;
+  display: grid;
+  gap: 12px;
+  max-width: 420px;
+  width: 300px;
+  padding: 32px 36px;
+  background: #fff;
+  border-radius: 10px;
+
+  /* Sombras suaves tipo UI moderna */
+  box-shadow:
+    0 12px 15px rgba(17, 24, 39, 0.08),
+    0 12px 15px rgba(82, 56, 255, 0.08);
+}
+
+/* pico en la esquina superior derecha */
+.card::before{
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: -7px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  transform: rotate(45deg);
+  border-radius: 3px;
+  box-shadow: 0 12px 15px rgba(17,24,39,0.06);
+}
+
+/* Icono */
+.icon{
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+/* Título */
+.title{
+  font-size: 22px;
+  line-height: 1.2;
+  margin: 0;
+  color: #1f2a44;
+  font-weight: 900;
+}
+
+/* Texto */
+.copy{
+  margin: 0;
+  color: #5d6679;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* Link */
+.copy a{
+  color: #3d6cff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.copy a:hover{ text-decoration: underline; }
+
+/* Botón gradiente */
+.boton{
+  margin-top: 8px;
+  width: 130px;
+  border: 0;
+  border-radius: 6px;
+  padding: 12px 20px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(135deg, #5b8dff, #6a5cff);
+  box-shadow: 0 8px 10px rgba(106,92,255,0.25);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.boton:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 8px 10px rgba(106,92,255,0.32);
+}
+.boton:active{
+  transform: translateY(0);
+  box-shadow: 0 8px 8px rgba(106,92,255,0.22);
+}

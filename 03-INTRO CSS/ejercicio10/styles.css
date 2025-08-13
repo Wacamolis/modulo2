@@ -1,0 +1,58 @@
+body{
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    background-color: rgb(201, 200, 255);
+    font-size: 14px;
+    font-weight: 300;
+    align-items: center;
+    line-height: 1.4;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 800;
+    color: #6342a0;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+article {
+  background: #fff;
+  border-radius: 16px;
+  width: 300px;
+  height: auto;
+  margin: 16px auto;   /* ↑↓ 12px, ←→ centrado */
+  padding: 20px;
+  text-align: left;
+  display: grid;
+}
+
+
+.pendiente{
+    color: rgb(66, 66, 163);
+    font-weight: 600;
+    ;
+}
+
+.haciendo{
+    color: rgb(240, 147, 42);
+    font-weight: 600;
+}
+
+.hecha{
+    color: rgb(58, 233, 87);
+    font-weight: 600;
+}
+
+.cancelada{
+    color: rgb(240, 42, 42);
+    font-weight: 600;
+}
