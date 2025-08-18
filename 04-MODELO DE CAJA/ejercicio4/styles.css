@@ -1,0 +1,38 @@
+
+body{
+    font-family: "Quicksand", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+.contenedor{
+  width: 540px;
+  margin: 24px auto;
+  padding: 20px;
+  background-color: rgb(246, 246, 246);
+  display: grid;
+  gap: 16px;     
+  border-radius: 20px;           
+}
+
+.barra{
+  width: 500px;              
+  height: 30px;            
+  padding: 3px;             
+  background-color: rgb(198,198,198);
+  border-radius: 100px;      
+  overflow: hidden;          /* recorta el hijo dentro del radio */
+  margin: 0 auto;            /* centra la barra dentro del contenedor */
+}
+
+.porcentaje{
+  height: 100%;          
+  background-color: rgb(93,246,185);
+  border-radius: 100px;   
+  
+  color: rgb(82, 82, 82);              /* texto blanco */
+  font-weight: 600;         /* en negrita */
+  display: flex;             /* usamos flexbox */
+  align-items: center;       /* centrado vertical */
+  justify-content: center;   /* centrado horizontal 
+}

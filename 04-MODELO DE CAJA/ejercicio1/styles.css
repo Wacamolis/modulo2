@@ -20,7 +20,7 @@ body{
   background: #fff;
   border-radius: 10px;
 
-  /* Sombras suaves tipo UI moderna */
+  /* Sombras suaves */
   box-shadow:
     0 12px 15px rgba(17, 24, 39, 0.08),
     0 12px 15px rgba(82, 56, 255, 0.08);

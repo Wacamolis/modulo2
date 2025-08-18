@@ -1,63 +1,29 @@
-<!--03 - Banderas
-Creá 6 banderas, una debajo de la otra, usando divs
-Las banderas deben 300px de ancho y 200px de alto
-Las banderas deben estar separadas entre sí por un margen
-Las banderas deben estar centradas horizontalmente respecto a la pantalla
-Elegí banderas con franjas horizontales o verticales (por ejemplo Argentina, México, Francia, Alemania). Para las franjas usá divs también, por ejemplo:-->
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Banderas</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verduras</title>
+
+  <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
-  <div class="contenedor">
-
-    <!-- Bandera Argentina -->
-    <div class="bandera horizontal">
-      <div class="franja celeste"></div>
-      <div class="franja blanco"></div>
-      <div class="franja celeste"></div>
-    </div>
-
-    <!-- Bandera Guatemala -->
-    <div class="bandera vertical circulo">
-      <div class="franja celeste"></div>
-      <div class="franja blanco"></div>
-      <div class="franja celeste"></div>
-    </div>
-
-        <!-- Bandera Mexico -->
-    <div class="bandera vertical cuadrado">
-      <div class="franja verde"></div>
-      <div class="franja blanco"></div>
-      <div class="franja rojo"></div>
-    </div>
-
-    <!-- Bandera Alemania -->
-    <div class="bandera horizontal forma-bandera">
-      <div class="franja negro"></div>
-      <div class="franja rojo"></div>
-      <div class="franja amarillo"></div>
-    </div>
-
-        <!-- Bandera Francia -->
-    <div class="bandera vertical circulo borde-ancho">
-      <div class="franja azul"></div>
-      <div class="franja blanco"></div>
-      <div class="franja rojo"></div>
-    </div>
-
-    <!-- Bandera España -->
-    <div class="bandera horizontal corazon">
-      <div class="franja rojo"></div>
-      <div class="franja amarillo"></div>
-      <div class="franja rojo"></div>
-    </div>
-
-  </div>
+    <article class="card">
+        <h1>Verdulería</h1>
+        <p class="texto">Selecciona la fruta que desees</p>
+        <article class="boton-frutas">
+            <p>🍎 Manzana</p>
+            <p>🍍 Piña</p>
+            <p>🥝 Kiwi</p>
+            <p>🥭 Mango</p>
+            <p>🍊 Naranja</p>
+        </article>
+    </article>
 </body>
 </html>
