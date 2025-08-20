@@ -1,0 +1,93 @@
+
+/*ABUELO*/ 
+body{
+background: #6acff7;
+background: linear-gradient(144deg, rgba(106, 207, 247, 1) 0%, rgba(86, 208, 232, 1) 50%, rgba(83, 129, 237, 1) 100%);    font-family: "Quicksand", sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*PADRE*/ 
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: ;
+
+    gap: 15px;
+    width: 450px;
+    height: auto;
+    padding: 15px;
+
+    background-color: rgb(238, 238, 238);
+    border-radius: 14px;
+    box-shadow: 3px 4px 15px rgb(170, 170, 170, 0.5);
+}
+
+/*HIJOS*/ 
+/*hijo 1*/ 
+.header {
+  display: flex;
+  justify-content: space-between; /* izquierda / derecha */
+  align-items: center;            /* centrado vertical */
+}
+
+h1{
+    font-size: 18px;
+    color: rgb(31, 31, 31);
+    font-weight: 900;
+}
+
+/*hijo 2*/ 
+button{
+    font-size: 12px;
+    font-weight: 550;
+    color: rgb(177, 177, 177);
+    background-color: rgb(238, 238, 238);
+    border-radius: 8px;
+    width: 110px;
+    height: auto;
+    padding: 8px;
+    border: 1px solid rgb(177, 177, 177);
+    cursor: pointer;
+}
+button:hover {
+    border-color: #4ac8d1; 
+    color: #4ac8d1;
+}
+
+/*hijo 3*/ 
+.card{
+    display:flex;
+    flex-direction:column;            /* columna */
+    gap: 5px;                         /* espacio entre cards */
+    background-color: rgb(238, 238, 238);
+    border-radius: 15px;
+    width: auto;
+    height: auto;
+    padding: 5px 25px 10px 25px;
+    border: 1px solid rgb(177, 177, 177);
+    border-left: 5px solid orange;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+/*NIETOS*/ 
+/*nieto 1*/ 
+.curso{
+    font-size: 16px;
+    font-weight: 800;
+    color: rgb(37, 37, 37);
+    margin-bottom: 0px
+}
+
+/*nieto 1*/ 
+.clases{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(119, 119, 119);
+    margin-bottom: 0px
+}
