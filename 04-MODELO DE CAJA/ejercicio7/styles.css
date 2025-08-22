@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(114, 144, 252);
+    font-family: "Quicksand", sans-serif;
+    min-height:100vh; 
+    text-align: left;
+    border:  1rem solid white;
+    padding: 1rem;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+    border-radius: 1rem;
+    width: 35%;
+    height: auto;
+    padding: 1.5rem;
+    gap: 2rem;
+    box-shadow:
+    0 24px 60px rgba(99, 73, 255, .20),
+    0 4px 10px rgba(20, 20, 40, .06);
+}
+
+h2{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1.5rem;
+}
+.grupo-tareas{
+    display:flex;
+    flex-direction: colum;
+    gap: 1rem;
+}
+
+.tarea{
+    width: 100%;
+    border: 1px solid rgb(195, 195, 195);
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.6rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: gray;
+    padding: 1rem;
+}
