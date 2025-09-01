@@ -1,0 +1,46 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { font-family: Arial, sans-serif; }
+
+/* Contenedor principal: fila */
+.layout {
+  display: flex;              /* 🔑 fila: left + right */
+  min-height: 100vh;          /* ocupa toda la pantalla */
+}
+
+/* Left Panel (toda la altura) */
+.left{
+  background: #f59bff;
+  width: 200px;               /* ancho fijo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Right side (columna con header, main y footer) */
+.right{
+  flex: 1;                    /* ocupa el resto del ancho */
+  display: flex;
+  flex-direction: column;     /* 🔑 apila header > main > footer */
+}
+
+/* Header */
+header {
+  background: #f8c1f0;
+  height: 72px;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* Main (crece para llenar el espacio) */
+main {
+  flex: 1;                    /* 🔑 ocupa lo que sobra */
+  background: #ffffff;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* Footer */
+footer {
+  background: #c88de6;
+  height: 72px;
+  display: flex; align-items: center; justify-content: center;
+}

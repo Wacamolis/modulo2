@@ -1,0 +1,54 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  display: flex;                /* body es el contenedor */
+  flex-direction: column;       /* apila: header -> main -> footer */
+  min-height: 100vh;            /* ocupa todo el alto visible */
+  font-family: Arial, sans-serif;
+}
+
+/* Header y Footer con alto fijo */
+header {
+  background: #f8c1f0;
+  height: 72px;
+  display: flex; align-items: center; justify-content: center;
+}
+nav{
+    background-color: #a33ed6;
+    height: 50px;
+    display: flex; align-items: center; justify-content: center;
+}
+
+.cuerpo{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main llena todo el espacio sobrante */
+main{
+  flex: 1;                      /* empuja el footer al fondo */
+  background: #ffffff;
+  display: flex;                /* para centrar el texto */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Columna izquierda */
+.left {
+  background: #f59bff;           /* rosado más fuerte */
+  width: 200px;                  /* ancho fijo */
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+
+/* Solo para que “Main Content” se vea centrado */
+.content { text-align: center; }
+
+
+footer{
+  background: #c88de6;
+  height: 72px;
+  display: flex; align-items: center; justify-content: center;
+}

@@ -1,0 +1,41 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  display: flex;                /* body es el contenedor */
+  flex-direction: column;       /* apila: header -> main -> footer */
+  min-height: 100vh;            /* ocupa todo el alto visible */
+  font-family: Arial, sans-serif;
+}
+
+/* Header y Footer con alto fijo */
+header {
+  background: #f8c1f0;
+  height: 72px;
+  display: flex; align-items: center; justify-content: center;
+}
+
+footer{
+  background: #c88de6;
+  height: 72px;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.cuerpo {
+  flex: 1;                       /* ocupa el espacio entre header y footer */
+  display: flex;                 /* 🔑 ahora en fila (left + main) */
+  min-height: 0;                 /* fix para que flexbox no colapse */
+}
+
+/* Columna izquierda */
+.right {
+  background: #f59bff;           /* rosado más fuerte */
+  width: 200px;                  /* ancho fijo */
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* Columna derecha */
+main {
+  background: #ffffff;
+  flex: 1;                       /* 🔑 ocupa todo lo restante */
+  display: flex; align-items: center; justify-content: center;
+}

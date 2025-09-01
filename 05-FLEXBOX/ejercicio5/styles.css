@@ -1,0 +1,63 @@
+*{ 
+  box-sizing:border-box; 
+  margin:0; 
+  padding:0;  
+}
+
+html, body {
+  height: 100%;
+}
+
+body{ 
+  font-family: "Montserrat", sans-serif; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img{
+    width: 40px;
+    background-color: rgb(99, 99, 248);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 18px;
+}
+
+.servicios{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    max-width: 1000px;
+    padding: 10px; 
+}
+
+
+ul{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+li {
+    flex: 1 1 50%;      /* cada ítem ocupa 50% del ancho disponible */
+    padding: 20px;      
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+p{
+    font-size: 14px;
+    color: rgb(95, 95, 95);
+    text-align: center;
+}
+h3{
+    font-size: 18px;
+}
+.detalle{
+    text-align: left;
+}
