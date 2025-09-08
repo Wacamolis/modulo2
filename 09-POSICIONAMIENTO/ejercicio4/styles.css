@@ -1,0 +1,57 @@
+header{
+  background-color: rgb(41, 73, 231);
+  min-height: 72px;             
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;          
+  gap: 20px;
+}
+
+/* --- Acciones --- */
+.acciones{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;          
+  gap: 30px;
+}
+
+/* Cada ítem es referencia para posicionar el badge */
+.like, .notificacion, .carrito{
+  position: relative;           /* para que el badge se ancle aquí */
+}
+
+.acciones img{
+  height: 40px;                 /* ajusta a gusto */
+  width: auto;
+  display: block;
+}
+
+/* Badge */
+.numero{
+  position: absolute;           /* se coloca sobre el ícono */
+  top: -18px;                    /* mueve a la esquina */
+  right: -8px;
+
+  background-color: rgb(251, 58, 58);
+  font-family: Montserrat;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  text-align: center;
+
+  width: 25px;                  /* círculo */
+  height: 25px;
+  border-radius: 50%;
+
+  display: flex;                /* centra el número */
+  align-items: center;
+  justify-content: center;
+}
+
+header > img{
+  height: 40px;
+  width: auto;
+  display: block;
+}

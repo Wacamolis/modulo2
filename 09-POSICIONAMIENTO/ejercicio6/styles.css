@@ -1,0 +1,83 @@
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+body {
+  margin: 0;
+  min-height: 100vh;          /* ocupa todo el alto visible */
+  display: flex;              /* flexbox para centrar */
+  justify-content: center;    /* centra horizontal */
+  align-items: center;        /* centra vertical */
+  background: #efefef;        /* color de fondo */
+  font-family: "Montserrat", sans-serif;
+}
+
+.card{
+  max-width: 400px;
+  margin: 40px auto;
+  border-radius: 16px;
+  overflow: hidden;           /* esquinas redondeadas para las dos secciones */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  text-align: center;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.imagen2 {
+    max-width: 400px;
+    height: auto;
+}
+.imagen{
+  position: relative;   /* 🔑 todo lo absoluto se mide desde aquí */
+  background:#fff;
+}
+.card .imagen2 img{
+  width:100%;
+  height:auto;
+  display:block;        /* quita espacios raros */
+}
+
+.etiqueta{
+  position: absolute;   /*  ahora flota sobre la foto */
+  top: 14px;
+  left: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;            
+  z-index: 2;
+}
+
+.envio{
+    background-color: rgb(144, 221, 28);
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+
+.dcto{
+    background-color: rgb(28, 105, 221);
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+footer{
+    text-align: left;
+    padding: 20px;
+}
+.corazon{
+   width: 40px;
+   height: auto;
+}
+.imagen .corazon{
+  position: absolute;   
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+}

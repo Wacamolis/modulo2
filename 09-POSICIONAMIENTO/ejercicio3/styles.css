@@ -1,0 +1,37 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { height: 100%; }
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #fafafa;
+}
+
+.boton{
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 10px 16px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 999px;             /* pastilla */
+  box-shadow: 0 10px 24px rgba(0,0,0,.15);
+}
+
+/* Punto verde */
+.dot{
+  width: 14px;
+  height: 14px;
+  background: #61e65a;              /* verde */
+  border-radius: 50%;               /* círculo perfecto */
+}
+
+.boton p{
+  font-size: 14px;
+  color: #111;
+  line-height: 1;
+}

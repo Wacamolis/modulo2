@@ -1,0 +1,51 @@
+.container {
+  width: 630px;             /* ancho fijo del área de trabajo */
+  height: 480px;            /* alto suficiente para los 4 escalones (10 + 310 + 150 + 10 = 480) */
+  border: 1px solid #000;   /* borde para ver el contorno */
+  padding: 10px;            /* separación interior; la referencia (0,0) de las cajas será aquí */
+  margin: 100px auto;       /* centrado horizontal con un margen superior de 100px */
+  position: relative;       /* ¡clave! hace que los hijos absolutos se posicionen respecto a este contenedor */
+}
+
+.box {
+  width: 150px;             /* tamaño de cada cuadro */
+  height: 150px;
+  position: absolute;       /* los saca del flujo y permite ubicar con top/left */
+  text-align: center;       /* centra el texto horizontalmente */
+  line-height: 150px;       /* centra verticalmente (igual a la altura) */
+  color: white;             /* texto en blanco */
+  font-weight: bold;        /* texto en negrita */
+  font-size: 18px;          /* tamaño de letra */
+}
+
+/* Box 1: esquina superior izquierda del área útil (después del padding) */
+.one {
+  background-color: darkgoldenrod; /* color del fondo */
+  top: 10px;                        /* 10px desde el borde superior del container */
+  left: 10px;                       /* 10px desde el borde izquierdo del container */
+  z-index: 4;                       /* más arriba que las demás */
+}
+
+/* Box 2: movido 100px a la derecha y 100px hacia abajo */
+.two {
+  background-color: darkcyan;
+  top: 110px;                       /* 10 + 100 */
+  left: 110px;                      /* 10 + 100 */
+  z-index: 3;                       /* queda debajo del 1 y encima del 3 */
+}
+
+/* Box 3: otro paso de 100px en X e Y */
+.three {
+  background-color: darkolivegreen;
+  top: 210px;                       /* 10 + (2 * 100) */
+  left: 210px;                      /* 10 + (2 * 100) */
+  z-index: 2;
+}
+
+/* Box 4: último escalón */
+.four {
+  background-color: darkred;
+  top: 310px;                       /* 10 + (3 * 100) */
+  left: 310px;                      /* 10 + (3 * 100) */
+  z-index: 1;                       /* el más al fondo */
+}

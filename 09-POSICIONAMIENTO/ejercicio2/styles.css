@@ -1,0 +1,82 @@
+
+*{ 
+  box-sizing:border-box; 
+  margin:0; 
+  padding:0;  
+}
+
+html, body {
+  height: 100%;
+}
+body{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Lienzo 3×3: 3 columnas de 100px con huecos de 24px */
+.board{
+  display: flex;
+  flex-wrap: wrap;      /* permite saltar a la siguiente fila */
+  gap: 24px;            /* espacio entre cuadros (como en tu imagen) */
+  width: 378px;         /* 3*100 + 2*24  -> caben 3 por fila exactos */
+}
+
+/* Cuadro gris (100×100) */
+.cell{
+  position: relative;
+  flex: 0 0 100px;      /* ancho fijo de 100px dentro del flex */
+  width: 100px; 
+  height: 100px;
+  background: #efefef;
+}
+
+/* Piezas internas */
+.red{
+  position: absolute;
+  width: 60px; height: 60px;
+  background: #dd3128;
+}
+.green{
+  position: absolute;
+  width: 30px; height: 30px;
+  background: #3ad523;
+}
+
+/* === posiciones, cuadro por cuadro === */
+
+/* 1) rojo sup-izq, verde inf-der */
+.c1 .red   { top:0px;  left:0px; }
+.c1 .green { bottom:0px; right:0px; }
+
+/* 2) rojo más abajo a la izq, verde sup-der */
+.c2 .red   { bottom:0px; left:0px; }
+.c2 .green { top:0px; right: 0px; }
+
+/* 3) rojo inf-der, verde sup-der */
+.c3 .red   { bottom:0px; right:0px; }
+.c3 .green { top:0px;    right:0px; }
+
+/* 4) ambos inf-izq */
+.c4 .red   { bottom:0px; left:0px; }
+.c4 .green { bottom:0px; left:30px; }
+
+/* 5) rojo sup-der; verde “metido” al centro */
+.c5 .red   { top:0px; right:0px; }
+.c5 .green { top:30px; left:40px; }
+
+/* 6) rojo inf-der; verde a media altura derecha */
+.c6 .red   { bottom:0px; right:0px; }
+.c6 .green { top:40px;   right:0px; }
+
+/* 7) rojo sup-izq; verde inf-izq */
+.c7 .red   { top:0px;  left:20px; }
+.c7 .green { bottom:0px; left:0px;}
+
+/* 8) rojo centrado abajo; verde centrado abajo dentro del rojo */
+.c8 .red   { bottom: 0px; left:50%; transform:translateX(-50%); }
+.c8 .green { bottom: 0px; left:50%; transform:translateX(-50%); }
+
+/* 9) ambos centrados exactos */
+.c9 .red   { top:50%; left:50%; transform:translate(-50%,-50%); }
+.c9 .green { top:50%; left:50%; transform:translate(-50%,-50%); }
