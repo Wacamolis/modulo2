@@ -13,7 +13,7 @@ body{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:6px 14px;
+  padding: 6px 14px;
   gap:12px;
   font-size:14px;
 }
@@ -96,6 +96,10 @@ nav .img{
   width: 470px;
   height: auto;
   display: block;
+}
+
+.banner img:hover{
+  content: url("https://i.postimg.cc/GmCx8RDm/PERRITO-0000-2.png"); /* cambia la imagen */
 }
 
 /* Columna del texto */
