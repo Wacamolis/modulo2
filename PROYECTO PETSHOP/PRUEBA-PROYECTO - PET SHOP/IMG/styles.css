@@ -22,7 +22,7 @@ body{
 .topbar select{
   background:#0b0b0b; color:#fff;
   border:1px solid #3a3a3a; border-radius:4px;
-  padding:4px 6px;
+  padding:4px 50px;
 }
 
 /* NAVEGACION MENU */
@@ -33,7 +33,7 @@ nav{
     display: flex;
     align-items: center;   /* centra verticalmente */
     justify-content: space-between; /* logo a la izq, menú a la der */
-    padding: 10px 16px;
+    padding: 15px 50px;
 }
 
 
@@ -89,16 +89,22 @@ nav .img{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0 40px 0 40px;       /* respiro horizontal */
+  padding: 0 50px ;       /* respiro horizontal */
 }
 
-.banner img{
+.banner .dogo{
   width: 470px;
   height: auto;
   display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.banner img:hover{
+.banner:hover .dogo{
+  width: 470px;
+  height: auto;
+  display: block;
   content: url("https://i.postimg.cc/GmCx8RDm/PERRITO-0000-2.png"); /* cambia la imagen */
 }
 
