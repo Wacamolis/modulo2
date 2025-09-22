@@ -1,0 +1,44 @@
+:root {
+    font-size: 62.5%; /* 1rem = ~10px */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4cafef;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-size: 4rem; 
+    text-align: center;
+}
+
+/* BP entre 600px y 900px */
+@media (max-width: 900px) and (min-width: 601px) {
+    body {
+        background-color: #ffcc80;
+    }
+    h1 {
+        font-size: 3.2rem; 
+    }
+}
+
+/* BP menor a 600px */
+@media (max-width: 600px) { 
+    body {
+        background-color: #81c784;
+    }
+    h1 {
+        font-size: 2.4rem; 
+    }
+}

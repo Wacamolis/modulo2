@@ -1,0 +1,117 @@
+:root {
+    font-size: 62.5%; /* 1rem = ~10px */
+    --cell: 8rem;     /* ancho/alto fijo de cada celda */
+    --gap: 0.8rem;    /* espacio entre columnas */
+    --bg: #0f1115;
+    --card: #151923;
+    --card-hover: #463768; /* color al pasar el mouse */
+    --text: #e7eaf3;
+    --muted: #aab1c3;
+    --border: #2a3244;
+    --radius: 0.6rem;
+}
+
+/* 🔧 1) Que el padding/borde cuenten dentro del width/height */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*{ 
+  box-sizing:border-box; 
+  margin:0; 
+  padding:0;  
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 1.6rem;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    text-align: center;
+    margin: 3rem;
+}
+
+.table {
+   /* overflow-x: auto;*/ 
+    width: 100%;
+    height: auto;
+    padding: 2rem 1.6rem; /* usa padding en vez de margin lateral en row */
+}
+
+/* Fila */
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: var(--gap);
+    justify-content: flex-start;   /* importante para que no “se corte” */
+    margin: 0 0 1.2rem;            /* sin márgenes laterales que ensanchen */
+}
+
+/* Espacio vacío que ocupa N columnas */
+.spacer {
+    /* 🔧 2) Fijar el ancho exacto y evitar shrink */
+    flex: 0 0 calc(var(--cell) * var(--n) + (var(--n) - 1) * var(--gap));
+    min-width: calc(var(--cell) * var(--n) + (var(--n) - 1) * var(--gap));
+}
+
+/* Celda */
+.cell {
+    /* 🔧 2) No permitir que flex la encoja ni la estire */
+    flex: 0 0 var(--cell);
+    width: var(--cell);
+    height: var(--cell);
+
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 0.8rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+
+    text-align: center;
+    transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+    overflow: hidden;              /* por si el texto quisiera desbordar */
+}
+
+/* Hover */
+.cell:hover {
+    background: var(--card-hover);
+    border-color: #414e6c;
+    transform: translateY(-0.2rem);
+}
+
+.sym {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;                /* más compacto */
+}
+
+.name {
+    font-size: 1.2rem;
+    margin: 0;
+    color: var(--muted);
+    white-space: nowrap;           /* evita salto de línea */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

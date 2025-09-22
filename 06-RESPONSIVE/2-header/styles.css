@@ -1,0 +1,106 @@
+:root {
+    font-size: 62.5%;          /* 1rem = 10px aprox. */
+    --muted: #aab1c3;
+    --radius: 0.6rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat";
+    background: #0f1115;
+    color: #e7eaf3;
+    line-height: 1.5;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+    height: 4.6rem;            
+    width: 100%;                      
+    background: #1c2333;       
+    display: flex;
+    align-items: center;                
+    justify-content: space-between;
+    padding-inline: 2rem;         
+    gap: 2rem;
+}
+
+.brand {
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    font-size: 1.6rem;             
+}
+
+/* Navegación */
+.site-nav .nav-list {
+    list-style: none;
+    display: flex;                      
+    gap: 2.4rem;                     
+}
+
+.site-nav a {
+    text-decoration: none;              
+    color:  #9cc9ff;
+    font-size: 1.4rem;                  
+    font-weight: 500;
+    display: inline-block;
+    line-height: 1;                      /* ayuda a centrar en el header */
+    padding-block: 0.6rem;              
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: #ffffff;
+}
+
+/* Botón del ícono (oculto por defecto en desktop) */
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: 0;
+    color: var(--text);
+    font-size: 2rem;                     /* tamaño del ícono */
+    cursor: pointer;
+    padding: 0.4rem;
+    border-radius: var(--radius);
+}
+
+.nav-toggle:hover,
+.nav-toggle:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+/* ---------- Contenido --------- */
+.content {
+    max-width: 96rem;
+    margin: 4rem auto;                  
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-align: center;
+}
+p {
+    font-size: 1.3rem;
+    color: var(--muted);
+    text-align: center;
+}
+
+/* ---------- Breakpoint ----------*/
+@media (max-width: 600px) {              /* 600px */
+    .site-nav {
+        display: none;                   /* ocultar los links */
+    }
+    .nav-toggle {
+        display: inline-block;           /* mostrar ícono */
+        margin-left: auto;               /* empuja a la derecha */
+    }
+}
