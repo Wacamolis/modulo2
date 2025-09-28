@@ -11,7 +11,6 @@
     --radius: 0.6rem;
 }
 
-/* 🔧 1) Que el padding/borde cuenten dentro del width/height */
 *,
 *::before,
 *::after {
@@ -51,7 +50,7 @@ body {
    /* overflow-x: auto;*/ 
     width: 100%;
     height: auto;
-    padding: 2rem 1.6rem; /* usa padding en vez de margin lateral en row */
+    padding: 2rem 1.6rem; 
 }
 
 /* Fila */
@@ -59,20 +58,18 @@ body {
     display: flex;
     flex-wrap: nowrap;
     gap: var(--gap);
-    justify-content: flex-start;   /* importante para que no “se corte” */
-    margin: 0 0 1.2rem;            /* sin márgenes laterales que ensanchen */
+    justify-content: flex-start;  
+    margin: 0 0 1.2rem;          
 }
 
-/* Espacio vacío que ocupa N columnas */
+
 .spacer {
-    /* 🔧 2) Fijar el ancho exacto y evitar shrink */
     flex: 0 0 calc(var(--cell) * var(--n) + (var(--n) - 1) * var(--gap));
     min-width: calc(var(--cell) * var(--n) + (var(--n) - 1) * var(--gap));
 }
 
 /* Celda */
 .cell {
-    /* 🔧 2) No permitir que flex la encoja ni la estire */
     flex: 0 0 var(--cell);
     width: var(--cell);
     height: var(--cell);
@@ -104,7 +101,7 @@ body {
     font-size: 2.4rem;
     font-weight: 700;
     margin: 0;
-    line-height: 1;                /* más compacto */
+    line-height: 1;             
 }
 
 .name {
