@@ -26,7 +26,6 @@ body{
 }
 
 /* NAVEGACION MENU */
-/* 1) El nav solo necesita relleno, no altura fija */
 nav{
     background: rgb(153, 120, 225);
     width: 100%;            /* evita scroll horizontal que da 100vw */

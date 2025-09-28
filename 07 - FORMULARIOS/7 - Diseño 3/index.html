@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Booking · Diseño 3</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <main class="hero">
+            <div class="overlay" aria-hidden="true"></div>
+
+            <!-- Layout principal: card izquierda, texto derecha -->
+            <section class="wrap">
+
+                <!-- CARD -->
+                <section class="card" aria-labelledby="form-title">
+                    <header class="card__header">
+                        <h2 id="form-title">Your Destination</h2>
+                        <p class="sr-only">Booking quick form</p>
+                    </header>
+
+                    <form action="#" method="post" class="form" novalidate>
+                        <!-- Destination full width -->
+                        <div class="field">
+                            <label class="sr-only" for="destino">Destination</label>
+                            <input
+                                type="text"
+                                id="destino"
+                                name="destino"
+                                placeholder="Enter a destination or hotel name"
+                                required
+                                autocomplete="off"
+                            />
+                        </div>
+
+                        <!-- Check in / Check out -->
+                        <div class="row">
+                            <div class="field">
+                                <label for="checkin">Check In</label>
+                                <input
+                                    type="date"
+                                    id="checkin"
+                                    name="checkin"
+                                    placeholder="dd/mm/aaaa"
+                                    required
+                                />
+                            </div>
+
+                            <div class="field">
+                                <label for="checkout">Check out</label>
+                                <input
+                                    type="date"
+                                    id="checkout"
+                                    name="checkout"
+                                    placeholder="dd/mm/aaaa"
+                                    required
+                                />
+                            </div>
+                        </div>
+
+                        <!-- Rooms / Adults / Children -->
+                        <div class="row">
+                            <div class="field sm">
+                                <label for="rooms">Rooms</label>
+                                <input type="number" id="rooms" name="rooms" min="1" value="1" />
+                            </div>
+                            <div class="field sm">
+                                <label for="adults">Adults</label>
+                                <input type="number" id="adults" name="adults" min="1" value="1" />
+                            </div>
+                            <div class="field sm">
+                                <label for="children">Children</label>
+                                <input type="number" id="children" name="children" min="0" value="0" />
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn">Check availability</button>
+                    </form>
+                </section>
+
+                <!-- COPY derecha -->
+                <section class="promo" aria-labelledby="promo-title">
+                    <h1 id="promo-title">MAKE YOUR<br />RESERVATION</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facere, soluta
+                        magnam consectetur molestias itaque ad sint fugit architecto incidunt iste culpa,
+                        perspiciatis possimus voluptates aliquid consequuntur cumque quasi. Perspiciatis.
+                    </p>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>

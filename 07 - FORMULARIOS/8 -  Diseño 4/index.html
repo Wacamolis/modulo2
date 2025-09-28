@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign Up · Design 4</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <main class="surface">
+            <!-- Frame blanco con sombra (contiene panel + form) -->
+            <section class="frame" role="region" aria-label="Registration">
+                <!-- Panel izquierdo -->
+                <aside class="panel">
+                    <header class="panel__head">
+                        <small class="tag">SHIPMENT</small>
+                    </header>
+                    <section class="panel__body">
+                        <h1 class="kick">Let’s Get <span>Started</span></h1>
+                        <p class="lede">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem ipsum has been the industry’s standard dummy text ever since the 1500s
+                        </p>
+                        <p class="cta"><a href="#" class="panel__link">SIGN UP HERE</a></p>
+                    </section>
+                    <div class="panel__bg" aria-hidden="true"></div>
+                </aside>
+
+                <!-- Formulario derecho -->
+                <section class="form-side" aria-labelledby="form-title">
+                    <header class="form-side__head">
+                        <h2 id="form-title">REGISTER WITH YOUR WORK EMAIL ADDRESS</h2>
+                    </header>
+
+                    <form action="#" method="post" class="form" novalidate>
+                        <!-- First / Middle / Last -->
+                        <div class="row">
+                            <div class="field col-1-3">
+                                <label for="first">First Name *</label>
+                                <input id="first" name="first" type="text" placeholder="First Name" required />
+                            </div>
+                            <div class="field col-1-3">
+                                <label for="middle">Middle Name</label>
+                                <input id="middle" name="middle" type="text" placeholder="Middle Name" />
+                            </div>
+                            <div class="field col-1-3">
+                                <label for="last">Last Name *</label>
+                                <input id="last" name="last" type="text" placeholder="Last Name" required />
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="row">
+                            <div class="field col-1">
+                                <label for="email">Email Address *</label>
+                                <input id="email" name="email" type="email" placeholder="name@work.com" required />
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="row">
+                            <div class="field col-1">
+                                <label for="phone">Phone Number</label>
+                                <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" />
+                                <small class="help">
+                                    Please provide a valid phone number in order to verify your account.
+                                    We will send you a verification code either via SMS or voice message
+                                    in order to confirm you own a phone number.
+                                </small>
+                            </div>
+                        </div>
+
+                        <!-- Passwords -->
+                        <div class="row">
+                            <div class="field col-1-2">
+                                <label for="password">Password</label>
+                                <input id="password" name="password" type="password" placeholder="Create a password" />
+                            </div>
+                            <div class="field col-1-2">
+                                <label for="confirm">Confirm Password</label>
+                                <input id="confirm" name="confirm" type="password" placeholder="Re-enter password" />
+                            </div>
+                        </div>
+
+                        <h3 class="subhead">Other Information</h3>
+
+                        <div class="row">
+                            <div class="field col-2-3">
+                                <label for="ref">Have a referral code?</label>
+                                <input id="ref" name="ref" type="text" placeholder="Referral code" />
+                            </div>
+                            <div class="field col-1-3">
+                                <label for="promo">Promo Code</label>
+                                <input id="promo" name="promo" type="text" placeholder="Promo Code" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="field col-1">
+                                <label for="hear">How did you hear about us?</label>
+                                <select id="hear" name="hear">
+                                    <option value="" disabled selected>Select one</option>
+                                    <option>Google Search</option>
+                                    <option>Friend/Colleague</option>
+                                    <option>Social Media</option>
+                                    <option>Event / Conference</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="field col-1">
+                                <label for="country">Country</label>
+                                <select id="country" name="country">
+                                    <option value="" disabled selected>Select your country</option>
+                                    <option>Guatemala</option>
+                                    <option>El Salvador</option>
+                                    <option>Honduras</option>
+                                    <option>Costa Rica</option>
+                                    <option>Panamá</option>
+                                    <option>Mexico</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="field col-1-2">
+                                <label for="addr1">Address Line 1</label>
+                                <input id="addr1" name="addr1" type="text" placeholder="Street address" />
+                            </div>
+                            <div class="field col-1-2">
+                                <label for="addr2">Apartment, Unit, Office</label>
+                                <input id="addr2" name="addr2" type="text" placeholder="Apt, unit, suite (optional)" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="field col-1-3">
+                                <label for="city">City</label>
+                                <input id="city" name="city" type="text" placeholder="City" />
+                            </div>
+                            <div class="field col-1-3">
+                                <label for="state">State</label>
+                                <input id="state" name="state" type="text" placeholder="State" />
+                            </div>
+                            <div class="field col-1-3">
+                                <label for="zip">Zip Code</label>
+                                <input id="zip" name="zip" type="text" placeholder="Zip Code" />
+                            </div>
+                        </div>
+
+                        <div class="row row--between">
+                            <label class="agree">
+                                <input type="checkbox" name="terms" required />
+                                I read and agree to <a href="#" class="link">term &amp; conditions</a>.
+                            </label>
+                        </div>
+
+                        <div class="actions">
+                            <button type="submit" class="btn">SIGN UP</button>
+                        </div>
+
+                        <p class="minor">
+                            Have an Account? <a href="#" class="link">Please Sign up</a>
+                        </p>
+                    </form>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>

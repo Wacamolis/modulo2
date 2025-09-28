@@ -1,0 +1,112 @@
+:root {
+    --radius: 0.6rem;
+    --gap: 1rem;
+    --ink: #222;
+    --muted: #666;
+    --border: #d9d9d9;
+    --btn: #08a0d1;
+    --btn-shadow: rgba(0, 0, 0, 0.2);
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+    margin: 0;
+    font: 1rem/1.5 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color: var(--ink);
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.card {
+    width: min(92vw, 28rem);
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    border: 1px solid var(--border);
+    box-shadow: 0 1px 0 rgba(0,0,0,.05);
+}
+
+.card > header > h1 {
+    margin: 0 0 1.25rem;
+    text-align: center;
+}
+
+/* Filas con Flex */
+.row {
+    display: flex;
+    gap: var(--gap);
+    margin-bottom: var(--gap);
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+/* Columnas flexibles */
+.col-1-2 { flex: 1; }
+.col-dni { flex: 0.9; }
+.col-email { flex: 1.4; }
+
+label { font-weight: 600; }
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.6rem 0.7rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    outline: none;
+}
+
+.hint {
+    display: block;
+    color: var(--muted);
+    margin: -0.25rem 0 1rem;
+    font-size: 0.875rem;
+}
+
+/* Footer del formulario: checkbox izq + botón der */
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--gap);
+}
+
+.btn {
+    padding: 0.7rem 1.25rem;
+    border: none;
+    border-radius: 0.7rem;
+    background: var(--btn);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 0.25rem 0.6rem var(--btn-shadow);
+}
+
+@media (max-width: 28rem) {
+    .row {
+        flex-direction: column;
+    }
+
+    .form-footer {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+    .btn {
+        align-self: flex-end;
+    }
+}

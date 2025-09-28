@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pago</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Pago con tarjeta</h1>
+        </header>
+
+        <main>
+            <section aria-labelledby="titulo-form">
+                <h2 id="titulo-form">Datos de la tarjeta</h2>
+
+                <form action="#" method="post" novalidate>
+                    <fieldset>
+                        <legend>Información de pago</legend>
+
+                        <div>
+                            <label for="cardNumber">Número de tarjeta</label>
+                            <input
+                                type="text"
+                                id="cardNumber"
+                                name="cardNumber"
+                                placeholder="Ej: 4111111111111111"
+                                inputmode="numeric"
+                                pattern="^\d{13,19}$"
+                                title="Entre 13 y 19 dígitos, sin espacios."
+                                required
+                                autocomplete="cc-number"
+                            />
+                        </div>
+
+                        <div>
+                            <label for="cardName">Nombre del titular</label>
+                            <input
+                                type="text"
+                                id="cardName"
+                                name="cardName"
+                                placeholder="Ej: ADA LOVELACE"
+                                required
+                                autocomplete="cc-name"
+                            />
+                        </div>
+
+                        <div>
+                            <label for="expMonth">Mes (MM)</label>
+                            <select id="expMonth" name="expMonth" required autocomplete="cc-exp-month">
+                                <option value="" disabled selected>MM</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="expYear">Año (YYYY)</label>
+                            <!-- Actualiza estos límites si lo necesitás -->
+                            <input
+                                type="number"
+                                id="expYear"
+                                name="expYear"
+                                placeholder="Ej: 2027"
+                                min="2025"
+                                max="2035"
+                                required
+                                autocomplete="cc-exp-year"
+                            />
+                        </div>
+
+                        <div>
+                            <label for="ccv">CCV</label>
+                            <input
+                                type="password"
+                                id="ccv"
+                                name="ccv"
+                                placeholder="Ej: 123"
+                                inputmode="numeric"
+                                pattern="^\d{3,4}$"
+                                title="3 ó 4 dígitos"
+                                required
+                                autocomplete="cc-csc"
+                            />
+                        </div>
+                    </fieldset>
+
+                    <p>
+                        <button type="submit">Pagar</button>
+                    </p>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

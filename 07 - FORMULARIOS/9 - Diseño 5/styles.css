@@ -1,0 +1,140 @@
+/* ===== Base ===== */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+:root{
+    --ink: #e6e7ea;                /* textos claros encima del negro */
+    --muted: #aeb2b8;
+    --card: #101214;               /* negro/gris muy oscuro */
+    --line: #2a2d31;
+    --focus: #ffd16666;
+
+    --accent: #f3b000;             /* amarillo del título/botón */
+    --accent-press: #d99a00;
+
+    --radius: .35rem;
+    --shadow: 0 18px 40px rgba(0,0,0,.45);
+}
+
+/* accesible “solo lectores” */
+.sr-only{
+    position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+    overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+}
+
+html, body { height: 100%; }
+
+body{
+    margin:0;
+    font: 1rem/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial;
+}
+
+/* ===== Hero ===== */
+.hero{
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    background:
+        url("https://i.postimg.cc/wjTSnyWf/calle-de-noche-con-trafico.jpg")
+        center / cover no-repeat fixed; 
+    position: relative;
+}
+.overlay{
+    position:absolute; inset:0;
+    background: rgba(0,0,0,.55); /* oscurece la foto como en el mock */
+}
+
+.hero__head{
+    position: relative; z-index: 1;
+    margin-bottom: 1rem;
+}
+.hero__head h1{
+    margin: 0;
+    font-size: clamp(1.8rem, 4.5vw, 3rem);
+    letter-spacing: .06em;
+    color: var(--accent);
+    font-weight: 900;
+}
+
+/* ===== Card/Form ===== */
+.card{
+    position: relative; z-index:1;
+    width: min(92vw, 52rem);
+    background: var(--card);
+    border-radius: .3rem;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(255,255,255,.06);
+    padding: 1.25rem;
+}
+
+.form{
+    display:flex; flex-direction:column; gap: 0.9rem;
+}
+
+/* filas */
+.row{ display:flex; flex-wrap:wrap; gap: .9rem; }
+.row--time{ align-items: flex-end; }
+
+/* columnas (solo Flex) */
+.col-1 { flex: 1 1 100%; }
+.col-1-2 { flex: 1 1 calc(50% - .45rem); }
+.col-2-5 { flex: 2 1 calc(40% - .45rem); }
+.col-1-5 { flex: 1 1 calc(20% - .45rem); }
+
+/* campos */
+.field{ display:flex; flex-direction:column; gap: .35rem; }
+
+label{
+    color: var(--muted);
+    font-size: .75rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select{
+    width: 100%;
+    padding: .7rem .9rem;
+    border: 1.5px solid var(--line);
+    border-radius: var(--radius);
+    background: #1a1d21;
+    color: var(--ink);
+    outline: none;
+    transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
+}
+input::placeholder{ color: #8b9097; }
+
+input:focus,
+select:focus{
+    background: #1e2126;
+    border-color: #3a3f46;
+    box-shadow: 0 0 0 4px var(--focus);
+}
+
+/* botón amarillo ancho */
+.btn{
+    margin-top: .2rem;
+    width: 100%;
+    padding: .9rem 1rem;
+    border: none;
+    border-radius: .25rem;
+    font-weight: 900;
+    letter-spacing: .03em;
+    cursor: pointer;
+    background: var(--accent);
+    color: #111;
+}
+.btn:active{ background: var(--accent-press); }
+
+/* responsive */
+@media (max-width: 40rem){
+    .col-1-2, .col-2-5, .col-1-5{ flex: 1 1 100%; }
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Create a new Topic</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <main class="surface">
+            <section class="card" aria-labelledby="title">
+                <header class="card__header">
+                    <h1 id="title">Create a new Topic</h1>
+                </header>
+
+                <form action="#" method="post" class="form" novalidate>
+                    <!-- Title -->
+                    <div class="field">
+                        <label class="sr-only" for="topic">Title</label>
+                        <input
+                            id="topic"
+                            name="topic"
+                            type="text"
+                            placeholder="Type title, or paste a link here"
+                            required
+                        />
+                    </div>
+
+                    <!-- Row: Category | Tags -->
+                    <div class="row">
+                        <div class="field">
+                            <label class="sr-only" for="category">Category</label>
+                            <select id="category" name="category" required>
+                                <option value="" disabled selected>Category</option>
+                                <option>General</option>
+                                <option>How-to</option>
+                                <option>Showcase</option>
+                                <option>Support</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <label class="sr-only" for="tags">Tags</label>
+                            <select id="tags" name="tags">
+                                <option value="" disabled selected>Tags</option>
+                                <option>UI</option>
+                                <option>CSS</option>
+                                <option>HTML</option>
+                                <option>Accessibility</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="field">
+                        <label class="sr-only" for="desc">Description</label>
+                        <textarea
+                            id="desc"
+                            name="desc"
+                            rows="5"
+                            placeholder="Enter your description here"
+                        ></textarea>
+                    </div>
+
+                    <!-- Actions -->
+                    <footer class="actions">
+                        <button type="submit" class="btn btn--primary">
+                            <!-- ignoramos ícono interno como indica el enunciado -->
+                            + Create Topic
+                        </button>
+                        <button type="button" class="btn btn--ghost">Cancel</button>
+                    </footer>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

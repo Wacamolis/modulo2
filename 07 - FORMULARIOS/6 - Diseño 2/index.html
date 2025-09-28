@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <main class="surface">
+            <section class="card" aria-labelledby="title">
+                <header class="card__header">
+                    <!-- barra superior tipo “ventana” (opcional del mock) -->
+                    <div class="dots" aria-hidden="true">
+                        <span></span><span></span><span></span>
+                    </div>
+                </header>
+
+                <section class="card__body">
+                    <header class="intro">
+                        <h1 id="title">Welcome!</h1>
+                        <p class="muted">
+                            Lorem ipsum dolor sit, amtetur adipisicing elit. Commodi dolatur est iusto nobisnse asperior.
+                        </p>
+                    </header>
+
+                    <form action="#" method="post" class="form" novalidate>
+                        <div class="field">
+                            <label for="password">Password</label>
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Enter your password"
+                                required
+                                autocomplete="current-password"
+                            />
+                        </div>
+
+                        <div class="field">
+                            <label for="username">Username</label>
+                            <input
+                                type="text"
+                                id="username"
+                                name="username"
+                                placeholder="Enter your name"
+                                required
+                                autocomplete="username"
+                            />
+                        </div>
+
+                        <div class="row row--opts">
+                            <label class="remember">
+                                <input type="checkbox" name="remember" />
+                                Remember Me
+                            </label>
+                            <a href="#" class="link">Forgot Password</a>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary">LOGIN</button>
+
+                        <p class="signup">
+                            <a href="#" class="link link--muted">SIGN UP</a>
+                        </p>
+                    </form>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>

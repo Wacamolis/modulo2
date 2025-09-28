@@ -1,0 +1,33 @@
+
+
+/* Tipografía base legible (16px) */
+body {
+    font-size: 1rem;
+    line-height: 0.9rem;
+    margin: 0;
+}
+
+.container {
+    width: min(102%, 70rem);
+    margin-inline: auto;
+    padding: 2rem 0;
+}
+
+/* Espaciado mínimo para que no quede todo pegado (sin estética, solo estructura) */
+.field {
+    margin-bottom: 1rem;
+}
+
+.actions {
+    margin-top: 1rem;
+}
+
+input, button {
+    font: inherit;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 0.8rem;
+    ali
+}

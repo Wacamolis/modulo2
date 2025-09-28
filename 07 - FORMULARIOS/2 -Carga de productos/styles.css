@@ -1,0 +1,27 @@
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: min(96%, 64rem);
+    margin-inline: auto;
+    padding: 1rem 0;
+}
+
+.field {
+    margin-bottom: 1rem;
+}
+
+.actions {
+    margin-top: 1rem;
+}
+
+input,
+select,
+textarea,
+button {
+    font: inherit;
+}

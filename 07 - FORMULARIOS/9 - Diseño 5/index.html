@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Book a Taxi</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <main class="hero">
+            <div class="overlay" aria-hidden="true"></div>
+
+            <header class="hero__head">
+                <h1>BOOK A TAXI</h1>
+            </header>
+
+            <section class="card" aria-labelledby="form-title">
+                <h2 id="form-title" class="sr-only">Booking form</h2>
+
+                <form action="#" method="post" class="form" novalidate>
+                    <!-- NAME / EMAIL -->
+                    <div class="row">
+                        <div class="field col-1-2">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" placeholder="Enter your name" required />
+                        </div>
+                        <div class="field col-1-2">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="Enter your email" required />
+                        </div>
+                    </div>
+
+                    <!-- PHONE -->
+                    <div class="row">
+                        <div class="field col-1">
+                            <label for="phone">Phone</label>
+                            <input id="phone" name="phone" type="tel" placeholder="Enter your phone number" />
+                        </div>
+                    </div>
+
+                    <!-- PICKUP LOCATION -->
+                    <div class="row">
+                        <div class="field col-1">
+                            <label for="pickup">Pickup Location</label>
+                            <input id="pickup" name="pickup" type="text" placeholder="Enter ZIP/Location" />
+                        </div>
+                    </div>
+
+                    <!-- DESTINATION -->
+                    <div class="row">
+                        <div class="field col-1">
+                            <label for="dest">Destination</label>
+                            <input id="dest" name="dest" type="text" placeholder="Enter ZIP/Location" />
+                        </div>
+                    </div>
+
+                    <!-- DATE / HOUR / MIN / AMPM -->
+                    <div class="row row--time">
+                        <div class="field col-2-5">
+                            <label for="date">Pickup Date</label>
+                            <input id="date" name="date" type="date" placeholder="dd/mm/aaaa" required />
+                        </div>
+                        <div class="field col-1-5">
+                            <label for="hour">Hour</label>
+                            <input id="hour" name="hour" type="number" min="1" max="12" value="1" />
+                        </div>
+                        <div class="field col-1-5">
+                            <label for="min">Min</label>
+                            <input id="min" name="min" type="number" min="0" max="59" value="05" />
+                        </div>
+                        <div class="field col-1-5">
+                            <label for="ampm">AM/PM</label>
+                            <select id="ampm" name="ampm">
+                                <option>AM</option>
+                                <option>PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn">BOOK NOW</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
